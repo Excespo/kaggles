@@ -1,8 +1,9 @@
-# <center> Something to know in this proj
+# <center> Something to know in this HousePrice prediciton proj
 
 
 ## *Pandas*
----
+
+
 ### <center> pd.Series & pd.DataFrame
 
 [pd.Series](https://pandas.pydata.org/docs/reference/api/pandas.Series.html?highlight=series#pandas.Series)
@@ -53,7 +54,7 @@ df.groupby():
 
 ## *Seaborn & Matplotlib.pyplot*
 
----
+
 ### sns.FacetGrid
 
 ---
@@ -61,17 +62,41 @@ df.groupby():
 
 include: hist, kde, rug
 
----
-### sns.probplot
+
 
 ## *scipy & sklearn*
 
----
+
 ### scipy.norm(.fit)
 
 ---
-### prepocessing.LabelEncoder
+### preprocessing.Imputer
+`Imputer(missing_values=’NaN’, strategy=’mean’, axis=0, verbose=0, copy=True)` 
+
+[`Imputer.SimpleImputer`](https://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer)
+
+---
+### preprocessing.RobustScaler
+[Doc](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.RobustScaler.html)
+
+Methods:
+ - fit
+ - transform
+---
+### preprocessing.LabelEncoder
 
 ---
 ### stats.skew & stats.norm
 
+---
+### stats.probplot
+
+__Quantial__: For a distribution $X$, the quantile is a fonction $Z = Z\left( \alpha \right)$ in the formula , $$\mathbb P \left(X \leq Z(\alpha) \right) = \alpha$$
+
+__probplot__: __Q-Q__ graph, with X quantiles and Y quantiles as respectively horizonal axis and vertical axis. __Therefore 2 variables with identical distribution should show a line on Q-Q graph.__
+[details](https://zhuanlan.zhihu.com/p/53124278)
+
+[`stats.probplot(x:array_like,...)`](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.probplot.html?highlight=probplot#scipy.stats.probplot)
+
+---
+### XGBoost

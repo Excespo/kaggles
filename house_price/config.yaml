@@ -1,0 +1,4 @@
+# Configuration of Stacking Model
+base_models: Lasso, Ridge, SVR, KernelRidge, ElesticNet, 
+k_folds: 5
+high_model: 1
